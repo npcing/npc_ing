@@ -1,0 +1,12 @@
+services:
+  server:
+    image: server:latest
+    ports:
+      - 8080:8080
+    restart: always
+    build: .
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /app
