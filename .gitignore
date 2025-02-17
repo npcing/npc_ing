@@ -5,6 +5,7 @@
 *.properties
 *.bin
 *.lock
+/.gradle/
 
 ### Flutter ###
 # Flutter/Dart/Pub related
