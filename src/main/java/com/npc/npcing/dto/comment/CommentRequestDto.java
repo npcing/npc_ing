@@ -1,12 +1,12 @@
-package com.npc.npcing.entity.board;
+package com.npc.npcing.dto.comment;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class BoardRequestDto {
-    private String title;
+public class CommentRequestDto {
+    private Long boardId;
     private String content;
     private String writer;
 }
