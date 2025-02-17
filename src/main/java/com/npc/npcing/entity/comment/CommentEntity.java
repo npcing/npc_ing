@@ -7,10 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
 @Entity
 public class CommentEntity {
     @Id
@@ -23,9 +21,12 @@ public class CommentEntity {
 
     private String content;
 
+    @Column(nullable = false)
     private String writer;
 
+    @Column(nullable = false)
     private LocalDateTime createdAt;
     
+    @Column(nullable = false)
     private LocalDateTime updatedAt;
 }
