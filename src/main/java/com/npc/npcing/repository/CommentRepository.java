@@ -1,9 +1,9 @@
 package com.npc.npcing.repository;
 
+import com.npc.npcing.entity.board.BoardEntity;
+import com.npc.npcing.entity.comment.CommentEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.npc.npcing.entity.BoardEntity;
-import com.npc.npcing.entity.CommentEntity;
 
 import java.util.List;
 

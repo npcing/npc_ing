@@ -1,12 +1,12 @@
 package com.npc.npcing.entity.user;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.npc.npcing.dto.user.UseAt;
+import jakarta.persistence.*;
+import lombok.Getter;
+
+import java.time.LocalDateTime;
 
 @Getter
-@Setter
 @Entity
 public class UserEntity {
     @Id
@@ -18,10 +18,5 @@ public class UserEntity {
     private String role;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private useAt useAt;
-}
-
-public enum useAt {
-    Y,
-    N
+    private UseAt useAt;
 }

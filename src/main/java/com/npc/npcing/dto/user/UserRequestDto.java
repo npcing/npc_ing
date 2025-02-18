@@ -13,7 +13,3 @@ public class UserRequestDto {
     private String useAt;
 }
 
-public enum useAt {
-    Y,
-    N
-}
